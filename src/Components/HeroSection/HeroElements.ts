@@ -1,4 +1,43 @@
 import styled from "styled-components";
+
+// -------- Intro Elements ---------
+export const IntroContainer = styled.div`
+    background: black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+`;
+
+export const IntroText = styled.div`
+    color: #e0f2fb;
+    font-size: 2rem;
+`;
+
+export const HideText = styled.h1`
+    overflow: hidden;
+`;
+
+export const SpanText = styled.span`
+    transform: translateY(100%);
+    display: inline-block;
+`;
+
+export const Slider = styled.div`
+    background: #646c72;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: translateY(100%);
+`;
+
+// -------- HeroSection Elements -----
 export const HeroContainer = styled.div`
     display: flex;
     height: 600px;
@@ -31,7 +70,6 @@ export const Content = styled.div`
 
 export const TextWrapper = styled.div`
     display: flex;
-    flex-direction: column;
     margin-bottom: 2.5rem;
 `;
 

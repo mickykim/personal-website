@@ -71,6 +71,7 @@ export const experienceData: Data = {
     colorTheme: false,
     reverse: false,
     img: require("../../assets/images/IlliniEsportsL.jpg").default,
+    link: "https://esports.illinois.edu/",
 };
 export const educationData: Data = {
     id: "section4",

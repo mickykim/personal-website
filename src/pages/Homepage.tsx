@@ -11,6 +11,10 @@ import {
 } from "../Components/InfoSection/Data";
 
 const Homepage = () => {
+    useEffect(() => {
+        document.title = "Miqueas 'Micky' Kim";
+    }, []);
+
     return (
         <div>
             <HeroSection id="main" />

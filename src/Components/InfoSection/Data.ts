@@ -21,6 +21,7 @@ export const websiteData: Data = {
     colorTheme: false,
     reverse: false,
     img: require("../../assets/images/HikingWeather.png").default,
+    link: "https://hiking-weather.vercel.app/",
 };
 
 export const websiteData2: Data = {
@@ -31,11 +32,13 @@ export const websiteData2: Data = {
     Application developed to understand backend technologies. 
     Includes features such as login authentication, JWT authorization, REST API. 
     Developed using the MERN (Mongoose, Express, React, Nodejs) stack. 
-    Frontend development was made using material-ui
+    Frontend development was made using material-ui.
+    Webapp may take time to load as backend is hosted on Heroku which shuts down after 30 minutes of inactivity.
     `,
     colorTheme: false,
     reverse: false,
-    img: require("../../assets/images/HikingWeather.png").default,
+    img: require("../../assets/images/Organizer.png").default,
+    link: "https://organizer-mern.vercel.app/",
 };
 
 export const projectsData: Data = {

@@ -25,6 +25,7 @@ export interface Props {
     altImg?: string;
     reverse?: boolean;
     colorTheme?: boolean;
+    link?: string;
 }
 
 const InfoSection: React.FC<Props> = ({
@@ -37,6 +38,7 @@ const InfoSection: React.FC<Props> = ({
     altImg,
     reverse = false,
     colorTheme = false,
+    link,
 }) => {
     return (
         <InfoContainer colorTheme={colorTheme} id={id}>
@@ -48,13 +50,28 @@ const InfoSection: React.FC<Props> = ({
             <InfoWrapper topText={topText}>
                 <Row reverse={reverse}>
                     <Column1>
-                        <Heading colorTheme={colorTheme}>{heading}</Heading>
+                        {link ? (
+                            <a href={link} target="_blank">
+                                {" "}
+                                <Heading colorTheme={colorTheme}>
+                                    {heading}
+                                </Heading>{" "}
+                            </a>
+                        ) : (
+                            <Heading colorTheme={colorTheme}>{heading}</Heading>
+                        )}
                         <Subtext>{subtext}</Subtext>
                         <Subtitle colorTheme={colorTheme}>{subtitle}</Subtitle>
                     </Column1>
                     <Column2>
                         <ImgWrap>
-                            <Img src={img} alt={altImg} />
+                            {link ? (
+                                <a href={link} target="_blank">
+                                    <Img src={img} alt={altImg} />{" "}
+                                </a>
+                            ) : (
+                                <Img src={img} alt={altImg} />
+                            )}
                         </ImgWrap>
                     </Column2>
                 </Row>

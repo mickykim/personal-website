@@ -12,12 +12,14 @@ import {
     Heading,
     ImgWrap,
     Img,
+    Subtext,
 } from "./InfoElements";
 
 export interface Props {
     id?: string;
     topText?: string;
     heading?: string;
+    subtext?: string;
     subtitle?: string;
     img?: string;
     altImg?: string;
@@ -29,6 +31,7 @@ const InfoSection: React.FC<Props> = ({
     id,
     topText,
     heading,
+    subtext,
     subtitle,
     img,
     altImg,
@@ -37,18 +40,17 @@ const InfoSection: React.FC<Props> = ({
 }) => {
     return (
         <InfoContainer colorTheme={colorTheme} id={id}>
-            <InfoWrapper>
+            {topText && (
                 <TitleWrapper>
                     <TopText colorTheme={colorTheme}>{topText}</TopText>
                 </TitleWrapper>
+            )}
+            <InfoWrapper topText={topText}>
                 <Row reverse={reverse}>
                     <Column1>
-                        <TextWrapper>
-                            <Heading colorTheme={colorTheme}>{heading}</Heading>
-                            <Subtitle colorTheme={colorTheme}>
-                                {subtitle}
-                            </Subtitle>
-                        </TextWrapper>
+                        <Heading colorTheme={colorTheme}>{heading}</Heading>
+                        <Subtext>{subtext}</Subtext>
+                        <Subtitle colorTheme={colorTheme}>{subtitle}</Subtitle>
                     </Column1>
                     <Column2>
                         <ImgWrap>

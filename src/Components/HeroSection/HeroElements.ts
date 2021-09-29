@@ -1,8 +1,8 @@
 import styled from "styled-components";
-
+import heroImage from "../../assets/images/mickyHero.jpg";
 // -------- Intro Elements ---------
 export const IntroContainer = styled.div`
-    background: black;
+    background: #69b251;
     position: fixed;
     top: 0;
     left: 0;
@@ -11,11 +11,13 @@ export const IntroContainer = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
+    z-index: 2;
 `;
 
 export const IntroText = styled.div`
-    color: #e0f2fb;
+    color: white;
     font-size: 2rem;
+    text-align: center;
 `;
 
 export const HideText = styled.h1`
@@ -28,7 +30,7 @@ export const SpanText = styled.span`
 `;
 
 export const Slider = styled.div`
-    background: #646c72;
+    background: white;
     position: fixed;
     top: 0;
     left: 0;
@@ -40,18 +42,25 @@ export const Slider = styled.div`
 // -------- HeroSection Elements -----
 export const HeroContainer = styled.div`
     display: flex;
-    height: 600px;
+    height: 750px;
     width: 100%;
+    max-width: 1700px;
     justify-content: center;
     align-content: center;
-    background-color: ${(props) => props.theme.primary};
+    background-color: ${(props) => props.theme.trueWhite};
 `;
 
 export const ImageBackground = styled.div`
     width: 100%;
     height: 100%;
-
-    background-size: 1400px 600px;
+    background-image: 
+    /* Background image filter */ linear-gradient(
+            180deg,
+            rgba(0, 0, 0, 0) 0%,
+            rgba(0, 0, 0, 0.2) 100%
+        ),
+        /* Actual Image */ url(${heroImage});
+    background-size: 100% 100%;
     background-repeat: no-repeat;
     z-index: 1;
 `;
@@ -61,7 +70,7 @@ export const Content = styled.div`
     align-items: center;
     justify-content: center;
     position: absolute;
-    height: 500px;
+    height: 100%;
     /* max-width: 1200px; */
     padding: 3.5rem 2.5rem;
     z-index: 2;
@@ -71,23 +80,15 @@ export const Content = styled.div`
 export const TextWrapper = styled.div`
     display: flex;
     margin-bottom: 2.5rem;
-`;
-
-export const TopText = styled.h2`
-    color: ${(props) => props.theme.secondaryText};
-    font-size: 1rem;
-    font-weight: 900;
-    text-transform: uppercase;
-    letter-spacing: 2.5px;
-    margin: 0;
-    margin-left: -1rem;
-
+    margin-left: -6rem;
+    margin-top: 5rem;
     @media screen and (max-width: 768px) {
-        margin-left: -0.5rem;
+        margin-left: -2rem;
     }
 `;
+
 export const H1 = styled.h1`
-    font-size: 5rem;
+    font-size: 4rem;
     line-height: 0.7;
     text-align: center;
     font-weight: 900;
@@ -106,4 +107,11 @@ export const P = styled.p`
     font-size: 1.5rem;
     font-weight: 500;
     text-align: center;
+`;
+
+export const ArrowWrapper = styled.div`
+    position: absolute;
+    font-size: 3.5rem;
+    bottom: 10%;
+    left: 47%;
 `;

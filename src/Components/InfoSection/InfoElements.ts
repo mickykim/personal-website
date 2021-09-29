@@ -5,58 +5,27 @@ import { Props } from "./index";
 export const InfoContainer = styled.div<Props>`
     color: #000;
     background: ${(props) =>
-        props.colorTheme ? props.theme.lightgrey : props.theme.neutral};
+        props.colorTheme ? props.theme.trueWhite : props.theme.trueWhite};
 `;
 
-export const InfoWrapper = styled.div`
-    display: grid;
-    height: 820px;
+export const InfoWrapper = styled.div<Props>`
+    height: auto;
+    padding: ${(props) => (props.topText ? "2rem 0rem" : "0rem")};
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
     justify-content: center;
     align-items: center;
-`;
-
-export const Row = styled.div<Props>`
-    display: grid;
-    grid-auto-columns: minmax(auto, 1fr);
-    justify-items: center;
-    align-items: center;
-
-    grid-template-areas: ${(props) =>
-        props.reverse ? `"col1 col2"` : `"col2 col1"`};
-
-    @media screen and (max-width: 768px) {
-        grid-template-areas: "col1" "col2";
-        padding-top: 1rem;
-        min-height: 500px;
-    }
-`;
-
-export const Column1 = styled.div`
-    margin-bottom: 1rem;
-    margin-left: 1rem;
-    margin-right: 1rem;
-    grid-area: col1;
-`;
-
-export const Column2 = styled.div`
-    margin-bottom: 1rem;
-    grid-area: col2;
+    row-gap: 3rem;
 `;
 
 export const TitleWrapper = styled.div`
     position: relative;
+    left: 12.5%;
     border-bottom: 2px solid #ccc;
-    @media screen and (max-width: 768px) {
-        padding-bottom: 1.5rem;
-    }
-`;
-
-export const TextWrapper = styled.div`
-    padding-bottom: 4rem;
-    max-width: 540px;
+    width: 75%;
+    margin-top: 5rem;
+    margin-bottom: 3rem;
     @media screen and (max-width: 768px) {
         padding-bottom: 1.5rem;
     }
@@ -70,7 +39,7 @@ export const TopText = styled.p<Props>`
     letter-spacing: 2.5px;
     background-color: #fff;
     position: absolute;
-    top: -2rem;
+    top: -1rem;
     left: 50%;
     transform: translate(-50%);
     border: 2px solid #ccc;
@@ -81,35 +50,76 @@ export const TopText = styled.p<Props>`
     }
 `;
 
+export const Row = styled.div<Props>`
+    display: grid;
+    grid-auto-columns: minmax(auto, 1fr);
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto;
+    grid-template-areas: ${(props) =>
+        props.reverse ? `"col1 col2"` : `"col2 col1"`};
+
+    grid-column-gap: 5rem;
+    @media screen and (max-width: 768px) {
+        grid-template-areas: "col1" "col2";
+        padding-top: 1rem;
+        min-height: 500px;
+    }
+`;
+
+export const Column1 = styled.div`
+    grid-area: col1;
+    height: 100%;
+    width: 600px;
+`;
+
+export const Column2 = styled.div`
+    margin-bottom: 1rem;
+    height: 100%;
+    grid-area: col2;
+    margin-top: 2rem;
+    width: 600px;
+    @media screen and (max-width: 768px) {
+        padding-bottom: 1.5rem;
+    }
+`;
+
+export const TextWrapper = styled.div`
+    display: flex;
+    flex-direction: column;
+    @media screen and (max-width: 768px) {
+        padding-bottom: 1.5rem;
+    }
+`;
+
 export const Heading = styled.h1<Props>`
     display: inline-block;
-    color: ${(props) => props.theme.primaryText};
-    background: linear-gradient(
-        -100deg,
-        transparent 0%,
-        ${(props) =>
-                props.colorTheme ? props.theme.yellow : props.theme.orange}
-            90%,
-        transparent 100%
-    );
-    background-size: 100% 120%;
-    background-position: 0 60%;
-    background-repeat: no-repeat;
-    font-size: 3rem;
+    color: #3377cc;
+    font-size: 2rem;
     font-weight: 700;
     line-height: 2.2rem;
-    margin-bottom: 3rem;
+    margin: 0 auto;
 
     @media screen and (max-width: 768px) {
         font-size: 2.4rem;
         margin-bottom: 1.2rem;
     }
 `;
+export const Subtext = styled.h2`
+    font-weight: 600;
+    color: #5e9516;
+    margin: 0;
+    margin-bottom: 1rem;
+`;
 
-export const Subtitle = styled.h2<Props>`
+export const Subtitle = styled.h3<Props>`
+    display: inline-block;
     color: ${(props) => props.theme.primaryText};
     font-weight: 300;
     font-size: 1.6rem;
+    margin: 0 auto;
     @media screen and (max-width: 768px) {
         font-size: 1.2rem;
     }

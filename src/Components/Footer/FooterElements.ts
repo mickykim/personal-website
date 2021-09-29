@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { Props } from "./index";
 
 export const FooterContainer = styled.footer`
-    background-color: ${(props) => props.theme.black};
+    background-color: ${(props) => props.theme.trueWhite};
 `;
 
 export const FooterWrapper = styled.div`
@@ -94,6 +94,6 @@ export const SocialIcons = styled.div`
 `;
 
 export const SocialIconLink = styled.a`
-    font-size: 1.5rem;
-    color: ${(props) => props.theme.primaryTextDark};
+    font-size: 2rem;
+    color: black;
 `;

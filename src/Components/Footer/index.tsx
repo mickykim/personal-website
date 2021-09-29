@@ -1,6 +1,7 @@
 import React from "react";
 import {
     FaFacebook,
+    FaGithub,
     FaInstagram,
     FaLinkedin,
     FaTwitter,
@@ -31,11 +32,11 @@ const Footer: React.FC<Props> = () => {
                     <SocialMediaWrapper>
                         <SocialIcons>
                             <SocialIconLink
-                                href="/"
-                                aria-label="Instagram"
+                                href="https://github.com/mickykim"
+                                aria-label="GitHub"
                                 target="_blank"
                             >
-                                <FaInstagram />
+                                <FaGithub />
                             </SocialIconLink>
                             <SocialIconLink
                                 href="https://twitter.com/wrathhots"

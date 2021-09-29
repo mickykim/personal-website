@@ -1,3 +1,16 @@
+import { createGlobalStyle } from "styled-components";
+import { KoHoFont } from "../assets/fonts/fonts";
+
+export const GlobalStyle = createGlobalStyle`
+    * {
+
+        font-family: 'KoHo', sans-serif;
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+`;
+
 export default {
     space: [],
     red: "#e76f51",

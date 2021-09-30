@@ -21,7 +21,7 @@ export const websiteData: Data = {
     colorTheme: false,
     reverse: false,
     img: require("../../assets/images/HikingWeather.png").default,
-    link: "https://hiking-weather.vercel.app/",
+    link: "https://hikingweather.vercel.app/",
 };
 
 export const websiteData2: Data = {

@@ -15,8 +15,8 @@ export const websiteData: Data = {
     topText: "My Websites",
     heading: "HikingWeather (Frontend Only)",
     subtext: "React, Styled-Components, TypeScript / 2021",
-    subtitle: `HikingWeather is built to showcase modern design implementations. 
-    Created using styled-components and React, HikingWeather features a mobile-friendly design, reactive elements, and smooth scrolling animations
+    subtitle: `HikingWeather is built to showcase modern design implementations and practice its implementation. 
+    Created using styled-components and React, HikingWeather features a mobile-friendly design, reactive elements, and smooth scrolling animations.
     `,
     colorTheme: false,
     reverse: false,
@@ -30,7 +30,7 @@ export const websiteData2: Data = {
     subtext: "MongoDB, Express, React, Nodejs / 2021",
     subtitle: `
     Application developed to understand backend technologies. 
-    Includes features such as login authentication, JWT authorization, REST API. 
+    Includes features such as login authentication, JWT authorization, dark theme toggle, and a REST API. 
     Developed using the MERN (Mongoose, Express, React, Nodejs) stack. 
     Frontend development was made using material-ui.
     Webapp may take time to load as backend is hosted on Heroku which shuts down after 30 minutes of inactivity.
@@ -44,13 +44,13 @@ export const websiteData2: Data = {
 export const projectsData: Data = {
     id: "section2",
     topText: "Additional Projects",
-    heading: "Champaign-Urbana Mass Transit District Passenger Tracking",
+    heading: "Champaign-Urbana Mass Transit District Passenger Route Tracking",
     subtext: "Python, C++, OpenCV / 2019",
     subtitle: `
-    Developed a system to track passengers and see which routes are propularly used by passengers using OpenCV, Python, and C++.
-    Initially the project was presented to us with the idea of using MAC address tracking by sniffing them with the use of the onboard wifi.
-    While this approach used to be widely employed in shopping malls to track customers through their different stores, Apple and Google have bothimplemented MAC randomization to protect its users from being identified without first connecting to a network. 
-    As such, we presented the idea to opt into using Computer Vision to achieve a similar result as tracking through MAC was deemed too difficult after some testing.
+    Developed a system to track passenger's routes to determine which routes are commonly used with OpenCV, Python, and C++.
+    Initially the project was presented to us with the idea of using MAC address sniffing to identify passengers with the use of the onboard wifi.
+    While this approach used to be widely employed in shopping malls to track customers through their different stores, Apple and Google have both since implemented MAC randomization to protect its users from being identified without first connecting to a network. 
+    As such, we presented the idea to opt into using Computer Vision to achieve a similar result as tracking through MAC was deemed too difficult after considerable testing.
     `,
     colorTheme: false,
     reverse: false,

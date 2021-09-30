@@ -57,8 +57,22 @@ export const projectsData: Data = {
     img: require("../../assets/images/MTD.png").default,
 };
 
-export const experienceData: Data = {
+export const educationData: Data = {
     id: "section3",
+    topText: "Education",
+    heading: "University of Illinois at Urbana-Champaign",
+    subtext: "B.S. in Computer Science / Winter 2019",
+    subtitle: `
+    During my years studying at the University of Illinois at Urbana-Champaign, I took a wide arrange of courses of varying subjects that represented my interests in the field.
+    Courses I took include: Computer Graphics, Computer Security, Virtual Reality, Computational Advertising, UI/UX Design, and Data Structures and Algorithms.
+    `,
+    colorTheme: false,
+    reverse: false,
+    img: require("../../assets/images/uiuc.png").default,
+};
+
+export const experienceData: Data = {
+    id: "section",
     topText: "Experience",
     heading: "Illini Esports",
     subtext: "President, Co-Founder, Tournament Director / 2016-2018",
@@ -72,17 +86,4 @@ export const experienceData: Data = {
     reverse: false,
     img: require("../../assets/images/IlliniEsportsL.jpg").default,
     link: "https://esports.illinois.edu/",
-};
-export const educationData: Data = {
-    id: "section4",
-    topText: "Education",
-    heading: "University of Illinois at Urbana-Champaign",
-    subtext: "B.S. in Computer Science",
-    subtitle: `
-    During my years studying at the University of Illinois at Urbana-Champaign, I took a wide arrange of courses of varying subjects that represented my interests in the field.
-    Courses I took include: Computer Graphics, Computer Security, Virtual Reality, Computational Advertising, UI/UX Design, and Data Structures and Algorithms.
-    `,
-    colorTheme: false,
-    reverse: false,
-    img: require("../../assets/images/uiuc.png").default,
 };

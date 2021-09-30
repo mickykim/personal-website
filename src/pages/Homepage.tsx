@@ -21,8 +21,8 @@ const Homepage = () => {
             <InfoSection {...websiteData} />
             <InfoSection {...websiteData2} />
             <InfoSection {...projectsData} />
-            <InfoSection {...experienceData} />
             <InfoSection {...educationData} />
+            <InfoSection {...experienceData} />
             <Footer />
         </div>
     );

@@ -13,6 +13,8 @@ import {
     SpanText,
     Slider,
     ArrowWrapper,
+    Source,
+    Image,
 } from "./HeroElements";
 import { CgArrowDownR } from "react-icons/cg";
 import { gsap } from "gsap";
@@ -36,41 +38,42 @@ const HeroSection: React.FC<Props> = ({ id }) => {
     const arrowWrapper = useRef<HTMLDivElement>(null);
     const tl = useRef<GSAPTimeline>();
 
-    // useEffect(() => {
-    //     tl.current = gsap.timeline({ defaults: { ease: "power1.out" } });
+    useEffect(() => {
+        tl.current = gsap.timeline({ defaults: { ease: "power1.out" } });
 
-    //     // --------- Intro Animations -------------
-    //     tl.current.to(hideText(".text"), {
-    //         y: "0%",
-    //         duration: 1,
-    //         stagger: 0.8,
-    //     });
-    //     tl.current.to(slider.current, {
-    //         y: "-100%",
-    //         duration: 1.5,
-    //         delay: 1,
-    //     });
-    //     tl.current.to(window, { scrollTo: 0 }, "-=1.5");
+        // --------- Intro Animations -------------
+        tl.current.to(hideText(".text"), {
+            y: "0%",
+            duration: 1,
+            stagger: 0.8,
+        });
+        tl.current.to(slider.current, {
+            y: "-100%",
+            duration: 1.5,
+            delay: 1,
+        });
+        tl.current.to(window, { scrollTo: 0 }, "-=1.5");
 
-    //     // ---------- Hero Animations --------------
-    //     tl.current.to(intro.current, { y: "-100%", duration: 1 }, "-=1");
-    //     tl.current.fromTo(
-    //         name(".nickName"),
-    //         { opacity: 0 },
-    //         { opacity: 1, duration: 1 }
-    //     );
-    //     tl.current.fromTo(
-    //         name(".fullName"),
-    //         { opacity: 0 },
-    //         { opacity: 1, delay: 0.5, duration: 1.5 }
-    //     );
-    //     tl.current.fromTo(
-    //         arrowWrapper.current,
-    //         { opacity: 0 },
-    //         { opacity: 1, duration: 1.5 },
-    //         "-=.5"
-    //     );
-    // }, []);
+        // ---------- Hero Animations --------------
+        tl.current.to(intro.current, { y: "-100%", duration: 1 }, "-=1");
+        tl.current.fromTo(
+            name(".nickName"),
+            { opacity: 0 },
+            { opacity: 1, duration: 1 }
+        );
+        tl.current.fromTo(
+            name(".fullName"),
+            { opacity: 0 },
+            { opacity: 1, delay: 0.5, duration: 1.5 }
+        );
+        tl.current.fromTo(
+            arrowWrapper.current,
+            { opacity: 0 },
+            { opacity: 1, duration: 1.5 },
+            "-=.5"
+        );
+    }, []);
+
     return (
         <>
             <HeroWrapper>
@@ -92,12 +95,12 @@ const HeroSection: React.FC<Props> = ({ id }) => {
                 </IntroContainer>
                 <HeroContainer id={id}>
                     <ImageBackground>
-                        <source
+                        <Source
                             srcSet={heroImageL}
                             media="(min-width:1025px)"
                         />
-                        <source srcSet={heroImageM} media="(min-width:600px)" />
-                        <img src={heroImageSm} alt="Micky image" />
+                        <Source srcSet={heroImageM} media="(min-width:600px)" />
+                        <Image src={heroImageSm} alt="Micky image" />
                     </ImageBackground>
                     <Content>
                         <TextWrapper ref={textWrapper}>

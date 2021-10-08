@@ -17,9 +17,6 @@ export const IntroContainer = styled.div`
     justify-content: center;
     align-items: center;
     z-index: 2;
-
-    //! Remove this to enable animation
-    display: none;
 `;
 
 export const IntroText = styled.div`
@@ -52,7 +49,7 @@ export const HeroContainer = styled.div`
     display: flex;
     height: 100vh;
     width: 100vw;
-    max-width: 1920px;
+    max-width: 100%;
     justify-content: center;
     align-content: center;
     background-color: ${(props) => props.theme.trueWhite};
@@ -60,10 +57,26 @@ export const HeroContainer = styled.div`
 
 export const ImageBackground = styled.picture`
     max-width: 100%;
-    height: auto;
+    width: 100vw;
     overflow: hidden;
     z-index: 1;
+
+    @media screen and (max-width: 1024px) {
+    }
 `;
+
+export const Source = styled.source`
+    width: 100vw;
+    height: auto;
+    max-width: 100%;
+`;
+
+export const Image = styled.img`
+    width: 100vw;
+    height: auto;
+    max-width: 100%;
+`;
+
 export const Content = styled.div`
     display: flex;
     flex-direction: column;

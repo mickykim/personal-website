@@ -65,7 +65,10 @@ export const Row = styled.div<Props>`
 
     grid-column-gap: 5rem;
     @media screen and (max-width: 1024px) {
+        grid-template-columns: auto;
+        grid-template-rows: auto auto;
         grid-template-areas: "col1" "col2";
+
         padding-top: 1rem;
     }
 `;
@@ -79,14 +82,17 @@ export const Column1 = styled.div`
     height: 100%;
     max-width: 600px;
     @media screen and (max-width: 1024px) {
+        align-items: center;
+        max-width: 100vw;
     }
     @media screen and (max-width: 600px) {
         align-items: center;
-        width: 100vw;
+        max-width: 100vw;
     }
 `;
 
 export const Column2 = styled.div`
+    display: flex;
     margin-bottom: 1rem;
     height: 100%;
     grid-area: col2;
@@ -94,6 +100,8 @@ export const Column2 = styled.div`
     max-width: 600px;
     @media screen and (max-width: 1024px) {
         padding-bottom: 1.5rem;
+        max-width: 100vw;
+        justify-content: center;
     }
     @media screen and (max-width: 600px) {
         align-items: center;
@@ -116,10 +124,14 @@ export const Heading = styled.h1<Props>`
     line-height: 2.2rem;
     width: 100%;
 
-    @media screen and (max-width: 1024px) {
+    @media screen and (max-width: 600px) {
         font-size: 1.8rem;
         margin-bottom: 1.2rem;
         width: 300px;
+        text-align: center;
+    }
+
+    @media screen and (max-width: 1024px) {
         text-align: center;
     }
 `;
@@ -144,6 +156,8 @@ export const Subtitle = styled.h3<Props>`
     font-weight: 300;
     font-size: 1.6rem;
     margin: 0 auto;
+    text-indent: 1.3rem;
+
     @media screen and (max-width: 1024px) {
         font-size: 1.2rem;
         padding: 0 1.3rem;

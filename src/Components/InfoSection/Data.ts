@@ -26,7 +26,7 @@ export const websiteData: Data = {
 
 export const websiteData2: Data = {
     id: "section1",
-    heading: "Organizer (Backend Focus)",
+    heading: "Organizer App (Backend Focus)",
     subtext: "MongoDB, Express, React, Nodejs / 2021",
     subtitle: `
     Application developed to understand backend technologies. 
@@ -43,7 +43,7 @@ export const websiteData2: Data = {
 
 export const projectsData: Data = {
     id: "section2",
-    topText: "Additional Projects",
+    topText: "Projects",
     heading: "Champaign-Urbana Mass Transit District Passenger Route Tracking",
     subtext: "Python, C++, OpenCV / 2019",
     subtitle: `

@@ -1,5 +1,10 @@
 import styled from "styled-components";
-import heroImage from "../../assets/images/mickyHero.jpg";
+
+export const HeroWrapper = styled.div`
+    height: 100vh;
+    width: 100vw;
+`;
+
 // -------- Intro Elements ---------
 export const IntroContainer = styled.div`
     background: #69b251;
@@ -12,6 +17,9 @@ export const IntroContainer = styled.div`
     justify-content: center;
     align-items: center;
     z-index: 2;
+
+    //! Remove this to enable animation
+    display: none;
 `;
 
 export const IntroText = styled.div`
@@ -42,26 +50,18 @@ export const Slider = styled.div`
 // -------- HeroSection Elements -----
 export const HeroContainer = styled.div`
     display: flex;
-    height: 750px;
-    width: 100%;
-    max-width: 1700px;
+    height: 100vh;
+    width: 100vw;
+    max-width: 1920px;
     justify-content: center;
     align-content: center;
     background-color: ${(props) => props.theme.trueWhite};
 `;
 
-export const ImageBackground = styled.div`
-    width: 100%;
-    height: 100%;
-    background-image: 
-    /* Background image filter */ linear-gradient(
-            180deg,
-            rgba(0, 0, 0, 0) 0%,
-            rgba(0, 0, 0, 0.2) 100%
-        ),
-        /* Actual Image */ url(${heroImage});
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
+export const ImageBackground = styled.picture`
+    max-width: 100%;
+    height: auto;
+    overflow: hidden;
     z-index: 1;
 `;
 export const Content = styled.div`
@@ -110,8 +110,8 @@ export const P = styled.p`
 `;
 
 export const ArrowWrapper = styled.div`
-    position: absolute;
+    position: relative;
     font-size: 3.5rem;
-    bottom: 10%;
-    left: 47%;
+    bottom: 0;
+    left: 0;
 `;

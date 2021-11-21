@@ -6,7 +6,6 @@ import {
     experienceData,
     projectsData,
     websiteData,
-    websiteData2,
     educationData,
 } from "../Components/InfoSection/Data";
 
@@ -19,7 +18,6 @@ const Homepage = () => {
         <div>
             <HeroSection id="main" />
             <InfoSection {...websiteData} />
-            <InfoSection {...websiteData2} />
             <InfoSection {...projectsData} />
             <InfoSection {...educationData} />
             <InfoSection {...experienceData} />

@@ -80,7 +80,7 @@ export const Column1 = styled.div`
     flex-direction: column;
     grid-area: col1;
     height: 100%;
-    max-width: 600px;
+    width: 600px;
     @media screen and (max-width: 1024px) {
         align-items: center;
         max-width: 100vw;
@@ -97,7 +97,7 @@ export const Column2 = styled.div`
     height: 100%;
     grid-area: col2;
     margin-top: 2rem;
-    max-width: 600px;
+    width: 600px;
     @media screen and (max-width: 1024px) {
         padding-bottom: 1.5rem;
         max-width: 100vw;

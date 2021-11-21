@@ -94,9 +94,14 @@ export const TextWrapper = styled.div`
     display: flex;
     margin-bottom: 2.5rem;
     margin-left: -6rem;
-    margin-top: 5rem;
-    @media screen and (max-width: 768px) {
+    margin-top: 12rem;
+    @media screen and (max-width: 1024px) {
         margin-left: -2rem;
+    }
+
+    @media screen and (max-width: 600px) {
+        margin-left: -2rem;
+        margin-top: 30rem;
     }
 `;
 
@@ -107,7 +112,7 @@ export const H1 = styled.h1`
     font-weight: 900;
     margin: 0;
     margin-bottom: 4rem;
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 1024px) {
         font-size: 2.5rem;
     }
     @media screen and (max-width: 480px) {

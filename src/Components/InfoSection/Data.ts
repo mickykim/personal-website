@@ -24,22 +24,22 @@ export const websiteData: Data = {
     link: "https://hikingweather.vercel.app/",
 };
 
-export const websiteData2: Data = {
-    id: "section1",
-    heading: "Organizer App (Backend Focus)",
-    subtext: "MongoDB, Express, React, Nodejs / 2021",
-    subtitle: `
-    Application developed to understand backend technologies. 
-    Includes features such as login authentication, JWT authorization, dark theme toggle, and a REST API. 
-    Developed using the MERN (Mongoose, Express, React, Nodejs) stack. 
-    Frontend development was made using material-ui.
-    Webapp may take time to load as backend is hosted on Heroku which shuts down after 30 minutes of inactivity.
-    `,
-    colorTheme: false,
-    reverse: false,
-    img: require("../../assets/images/Organizer.png").default,
-    link: "https://organizer-mern.vercel.app/",
-};
+// export const websiteData2: Data = {
+//     id: "section1",
+//     heading: "Organizer App (Backend Focus)",
+//     subtext: "MongoDB, Express, React, Nodejs / 2021",
+//     subtitle: `
+//     Application developed to understand backend technologies.
+//     Includes features such as login authentication, JWT authorization, dark theme toggle, and a REST API.
+//     Developed using the MERN (Mongoose, Express, React, Nodejs) stack.
+//     Frontend development was made using material-ui.
+//     Webapp may take time to load as backend is hosted on Heroku which shuts down after 30 minutes of inactivity.
+//     `,
+//     colorTheme: false,
+//     reverse: false,
+//     img: require("../../assets/images/Organizer.png").default,
+//     link: "https://organizer-mern.vercel.app/",
+// };
 
 export const projectsData: Data = {
     id: "section2",

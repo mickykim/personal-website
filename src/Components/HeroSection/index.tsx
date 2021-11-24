@@ -77,7 +77,7 @@ const HeroSection: React.FC<Props> = ({ id }) => {
     return (
         <>
             <HeroWrapper>
-                <IntroContainer ref={intro}>
+                {/* <IntroContainer ref={intro}>
                     <IntroText ref={introText}>
                         <HideText>
                             <SpanText className="text">Hey there I'm</SpanText>
@@ -92,7 +92,7 @@ const HeroSection: React.FC<Props> = ({ id }) => {
                         </HideText>
                     </IntroText>
                     <Slider ref={slider}></Slider>
-                </IntroContainer>
+                </IntroContainer> */}
                 <HeroContainer id={id}>
                     <ImageBackground>
                         <Source

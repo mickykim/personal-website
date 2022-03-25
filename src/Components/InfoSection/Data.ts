@@ -10,12 +10,25 @@ type Data = {
     link?: string;
 };
 
+export const construlitaData: Data = {
+    id: "section1",
+    topText: "Websites",
+    heading: "Construlita",
+    subtext: "Next.js/React, Tailwindcss, TypeScript / 2022",
+    subtitle: `Construlita landing page features a mobile first design where users can see the services provided through a responsive carousel. This page was created with a focus on high pagespeed scores on both desktop and mobile. This was achieved with the use of highly optimized images, 
+    lazy loading, css minification and static page generation. The use of both tailwindcss and Next.js helped greatly to streamline the speed optimizations the page needed to be able to raise the pagespeed scores to 90 on mobile and 100 on desktop. 
+    `,
+    colorTheme: false,
+    reverse: false,
+    img: require("../../assets/images/construlita.png").default,
+    link: "https://construlita.vercel.app/",
+};
+
 export const websiteData: Data = {
     id: "section1",
-    topText: "My Websites",
-    heading: "HikingWeather (Frontend Only)",
+    heading: "HikingWeather",
     subtext: "React, Styled-Components, TypeScript / 2021",
-    subtitle: `HikingWeather is built to showcase modern design implementations and practice its implementation. 
+    subtitle: `HikingWeather is built to practice modern design implementations in a mockup project. 
     Created using styled-components and React, HikingWeather features a mobile-friendly design, reactive elements, and smooth scrolling animations.
     `,
     colorTheme: false,

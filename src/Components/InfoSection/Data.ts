@@ -20,7 +20,7 @@ export const construlitaData: Data = {
     `,
     colorTheme: false,
     reverse: false,
-    img: require("../../assets/images/construlita.png").default,
+    img: "images/construlita.png",
     link: "https://construlita.vercel.app/",
 };
 
@@ -33,7 +33,7 @@ export const websiteData: Data = {
     `,
     colorTheme: false,
     reverse: false,
-    img: require("../../assets/images/HikingWeather.png").default,
+    img: "images/HikingWeather.png",
     link: "https://hikingweather.vercel.app/",
 };
 
@@ -67,7 +67,7 @@ export const projectsData: Data = {
     `,
     colorTheme: false,
     reverse: false,
-    img: require("../../assets/images/MTD.png").default,
+    img: "images/MTD.png",
 };
 
 export const educationData: Data = {
@@ -81,7 +81,7 @@ export const educationData: Data = {
     `,
     colorTheme: false,
     reverse: false,
-    img: require("../../assets/images/uiuc.png").default,
+    img: "images/uiuc.png",
 };
 
 export const experienceData: Data = {
@@ -97,6 +97,6 @@ export const experienceData: Data = {
     `,
     colorTheme: false,
     reverse: false,
-    img: require("../../assets/images/IlliniEsportsL.jpg").default,
+    img: "images/IlliniEsportsL.jpg",
     link: "https://esports.illinois.edu/",
 };

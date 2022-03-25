@@ -19,9 +19,6 @@ import {
 import { CgArrowDownR } from "react-icons/cg";
 import { gsap } from "gsap";
 import { ScrollToPlugin } from "gsap/ScrollToPlugin";
-import heroImageL from "../../assets/images/mickyHero-l.png";
-import heroImageM from "../../assets/images/mickyHero-m.png";
-import heroImageSm from "../../assets/images/mickyHero-sm.png";
 
 gsap.registerPlugin(ScrollToPlugin);
 interface Props {
@@ -96,11 +93,17 @@ const HeroSection: React.FC<Props> = ({ id }) => {
                 <HeroContainer id={id}>
                     <ImageBackground>
                         <Source
-                            srcSet={heroImageL}
+                            srcSet="images/mickyHero-l.png"
                             media="(min-width:1025px)"
                         />
-                        <Source srcSet={heroImageM} media="(min-width:600px)" />
-                        <Image src={heroImageSm} alt="Micky image" />
+                        <Source
+                            srcSet="images/mickyHero-m.png"
+                            media="(min-width:600px)"
+                        />
+                        <Image
+                            src="images/mickyHero-sm.png"
+                            alt="Micky image"
+                        />
                     </ImageBackground>
                     <Content>
                         <TextWrapper ref={textWrapper}>

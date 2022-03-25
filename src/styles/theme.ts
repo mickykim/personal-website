@@ -1,5 +1,5 @@
 import { createGlobalStyle } from "styled-components";
-import { KoHoFont } from "../assets/fonts/fonts";
+import { KoHoFont } from "../../public/assets/fonts/fonts";
 
 export const GlobalStyle = createGlobalStyle`
     * {
